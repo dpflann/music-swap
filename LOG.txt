@@ -1,0 +1,18 @@
+2-13-2013:
+COMPLETED:
+  > Started a Log for project
+  > Created Entry datamodel
+  > Create query method to obtain entries
+  > Created way to easily add new entries for testing/development purposes
+  > Created templating for displaying entries obtain from query
+
+TODO:
+  > How to style entries better
+    - dealing with multiple urls
+    - dealing with multiple videos/oembed
+  > Setting up email receiving then posting
+  > Easy search page for searching by date
+  > Pagination
+  > Caching?
+  > Importing entries from historical Gmail threads
+

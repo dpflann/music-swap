@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "open sans", "Helvetica", sans-serif;
   width: 600px;
   margin: 0 auto;
   padding: 10px;
@@ -16,7 +16,7 @@ hr {
   margin: 20px auto;
 }
 
-.entry {
+.entry, .empty {
   border: 1px solid #00AABB;
   border-radius: 2px;
   background-color: #EEEEEE;
@@ -34,11 +34,12 @@ hr {
   padding-right: 10px;
 }
 
-.entry-text, .entry-links {
-  margin-left: 10px;
+.entry-body, .entry-urls {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.entry-links {
+.entry-urls {
   margin-top: 10px;
 }
 
@@ -48,6 +49,10 @@ hr {
 
 .entry-date {
   margin-top: 5px;
+}
+
+p.nothing {
+  text-align: center;
 }
 /*
 * {
@@ -90,8 +95,8 @@ hr {
 
 .entry-media {
   margin-left: 20px;
-  width: 560px;
-  height: 400px;
+  /*width: 560px;
+  height: 400px;*/
 }
 
 
