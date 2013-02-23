@@ -16,13 +16,15 @@
       {% if entries %}
       {% for entry in entries %}
       <div class="entry">
-        <div class="entry-date">{{entry.date}}</div>
+        <!-- play around with date formating -->
+        <div class="entry-date">{{entry.date.strftime("%B %d, %Y")}}</div>
         {% for media in entry.oembed_media_urls %}
-          <div class="entry-media">{{media | safe}}</div>
+        <div class="entry-media">{{media | safe}}</div>
         {% endfor %}
         <div class="entry-body">{{entry.body}}</div>
-        <div class="entry-urls">{{entry.urls}}</div>
-        <div class="entry-author">posted by: {{entry.author}}</div>
+        <div class="entry-meta-data">
+            <div class="entry-author">posted by: {{entry.author}}</div>
+        </div>
       </div>
       {% endfor %}
       {% else %}
@@ -33,7 +35,6 @@
     </div> <!-- content div -->
   </body>
 </html>
-
 
 
 

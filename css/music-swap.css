@@ -17,7 +17,7 @@ hr {
 }
 
 .entry, .empty {
-  border: 1px solid #00AABB;
+  border: 1px solid #D6D6D6;
   border-radius: 2px;
   background-color: #EEEEEE;
   margin-top: 20px;
@@ -34,30 +34,50 @@ hr {
   padding-right: 10px;
 }
 
-.entry-body, .entry-urls {
-  margin-left: 20px;
-  margin-right: 20px;
+.entry-body {
+   margin: 15px 20px 20px 20px;
 }
 
 .entry-urls {
-  margin-top: 10px;
-}
-
-.entry-author {
-  margin-bottom: 5px;
+  margin-top: 10px 20px 0px 20px;
 }
 
 .entry-date {
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.entry-meta-data {
+  margin-bottom: 5px;
+}
+
+.entry-tags ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.tags li {
+  display: inline;
+}
+
+.entry-author {
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #B6B6B6;
+  margin: 20px 25% 0px 25%;
+
 }
 
 p.nothing {
   text-align: center;
 }
-/*
-* {
-  border: 1px dashed #0000FF;
-}*/
 
 #header {
   position: fixed;
@@ -73,7 +93,6 @@ p.nothing {
   padding-top: 45px;
   padding-bottom: 25px;
   background: url('../static/ferriss_2.png') repeat;
-  
 }
 
 #content {
@@ -90,7 +109,6 @@ p.nothing {
 
 .navigation {
   margin-top: -22px;
-
 }
 
 .entry-media {
@@ -99,4 +117,11 @@ p.nothing {
   height: 400px;*/
 }
 
+.entry + .entry {
+  margin-top: 50px;
+}
 
+/*
+* {
+  border: 1px dashed #0000FF;
+}*/
