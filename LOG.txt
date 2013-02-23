@@ -1,5 +1,12 @@
-2-13-2013:
 COMPLETED:
+2-23-2013:
+  > Removed 'tags' property from Entry: currently unnecessary
+  > Styled Entries to be acceptable: updated index.html and css to reflect this
+  > Progress on automating Entry creation from downloaded conversations:
+    -> Can easily grab date, sender + sender name, and links
+    -> Can create an oembed url from a link
+
+2-13-2013:
   > Started a Log for project
   > Created Entry datamodel
   > Create query method to obtain entries
@@ -7,6 +14,13 @@ COMPLETED:
   > Created templating for displaying entries obtain from query
 
 TODO:
+2-23-2013:
+  > Deal with oembed requests:
+    -> use embedly!
+    -> converting unicode to str/chars
+    -> obtaining media such as thumbnails
+    -> oembed urls specific to each site
+2-13-2013:
   > How to style entries better
     - dealing with multiple urls
     - dealing with multiple videos/oembed
@@ -14,5 +28,4 @@ TODO:
   > Easy search page for searching by date
   > Pagination
   > Caching?
-  > Importing entries from historical Gmail threads
-
+  > Importing entries from historical Gmail threads: admin page to import via GET
